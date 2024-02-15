@@ -21,3 +21,6 @@ if __name__ == '__main__':
 
     cleaned = clean(args.input1, args.input2)
     cleaned.to_csv(args.output, index=False)
+
+    merged_df_shape = cleaned.shape
+    print(merged_df_shape)
